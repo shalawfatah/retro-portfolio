@@ -8,7 +8,7 @@ import Skills from "../components/pages/home/Skills"
 const IndexPage = () => {
 
   return (
-    <Layout>
+    <Layout classes={"bg-[#CED3DA]"}>
       <div className="flex justify-around my-32 p-6 relative container">
         <div className="">
           <Sticky text={"Fourth"} classes={'bg-[#CED3DA] -mt-2 -rotate-[8deg] absolute '} />

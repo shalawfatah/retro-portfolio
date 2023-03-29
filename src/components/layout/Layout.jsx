@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-const Layout = ({children}) => {
+const Layout = ({children, classes}) => {
   return (
-    <div className='bg-[#CED3DA]'>
+    <div className={`${classes}`}>
         <Navbar />
         <div className='container mx-auto'>
           {children}

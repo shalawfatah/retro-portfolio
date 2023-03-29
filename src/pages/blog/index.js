@@ -4,7 +4,7 @@ import Paper from '../../components/pages/blog/Paper'
 
 const Blog = () => {
   return (
-    <Layout>
+    <Layout classes="bg-[#CED3DA]">
         <Paper title="Blog Title" body={"Blog Body"} />
         <Paper title="Blog Title" body={"Blog Body"} />
         <Paper title="Blog Title" body={"Blog Body"} />
