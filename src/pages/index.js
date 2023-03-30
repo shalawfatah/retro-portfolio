@@ -14,14 +14,18 @@ const IndexPage = () => {
           <Sticky text={"Fourth"} classes={'bg-[#CED3DA] -mt-2 -rotate-[8deg] absolute '} />
           <Sticky text={"Second"} classes={'bg-[#B1D0FF] -mt-2 -rotate-[6deg] absolute '} />
           <Sticky text={"Third"} classes={'bg-[#93E496] -mt-2 -rotate-[4deg] absolute '} />
-          <Sticky text={"First"} classes={'bg-[#FFEA79] absolute'} />
+          <Sticky text={"I'm a web developer, focusing on frontend"} classes={'bg-[#FFEA79] absolute'} />
         </div>
         <div>
         <StaticImage src="../images/tea-leaf.png" alt="Tea" className="w-[500px]" />
         </div>
       </div>
-      <SocialMedia />
-      <Skills />
+      <div className="my-12">
+        <Skills />
+      </div>
+      <div className="py-12">
+        <SocialMedia />
+      </div>
     </Layout>
   )
 }
