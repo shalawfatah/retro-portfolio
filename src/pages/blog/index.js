@@ -4,6 +4,7 @@ import Paper from '../../components/pages/blog/Paper'
 import { supabase } from '../../lib/supabase'
 
 const Blog = () => {
+
   const [blogs, setBlogs] = useState([])
   const fetcher = async() => {
     const {data, error} = await supabase.from('blog').select()
@@ -26,3 +27,5 @@ const Blog = () => {
 }
 
 export default Blog
+
+export const Head = () => <title>Blog</title>

@@ -33,3 +33,5 @@ const About = () => {
 }
 
 export default About
+
+export const Head = () => <title>About</title>

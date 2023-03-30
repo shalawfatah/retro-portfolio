@@ -4,7 +4,7 @@ import Pin from './Pin';
 
 const Button = ({text, onClick, pin}) => {
   return (
-    <div onClick={onClick} className='relative flex'>
+    <div onClick={onClick} className='relative flex cursor-pointer'>
         {pin === true ? (<div className='absolute right-0 -top-6 z-[2000]'>
             <Pin />
         </div>) : <p></p>}
