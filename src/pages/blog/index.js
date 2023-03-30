@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from '../../components/layout/Layout'
 import Paper from '../../components/pages/blog/Paper'
+import { supabase } from '../../lib/supabase'
 
 const Blog = () => {
+  const [blogs, setBlogs] = useState([])
+  const fetcher = async() => {
+    const {data, error} = await supabase.from('blog').select()
+    if(error) console.log(error)
+    setBlogs(data)
+  }
+  useEffect(() => {
+    fetcher()
+  }, [])
+
   return (
     <Layout classes="bg-[#CED3DA]">
-        <Paper title="Blog Title" body={"Blog Body"} />
-        <Paper title="Blog Title" body={"Blog Body"} />
-        <Paper title="Blog Title" body={"Blog Body"} />
-        <Paper title="Blog Title" body={"Blog Body"} />
-        <Paper title="Blog Title" body={"Blog Body"} />
-        <Paper title="Blog Title" body={"Blog Body"} />
+      <div className='pb-20'>
+      {blogs.map(item => {
+        return <Paper link={item.id} title={item.title} body={`${item.content.slice(0, 200)} ...`} />
+      })}
+      </div>
     </Layout>
   )
 }
