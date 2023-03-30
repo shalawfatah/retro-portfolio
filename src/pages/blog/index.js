@@ -18,7 +18,7 @@ const Blog = () => {
     <Layout classes="bg-[#CED3DA]">
       <div className='pb-20'>
       {blogs.map(item => {
-        return <Paper link={item.id} title={item.title} body={`${item.content.slice(0, 200)} ...`} />
+        return <Paper link={item.link} title={item.title} excerpt={`${item.excerpt} ...`} />
       })}
       </div>
     </Layout>
