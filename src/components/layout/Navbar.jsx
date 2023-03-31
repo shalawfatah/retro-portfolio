@@ -21,7 +21,7 @@ const Navbar = () => {
     }, [id])
     
   return (
-    <div className='flex justify-center py-8 cursor-pointer'>
+    <div className='flex justify-center py-8 cursor-pointer flex-wrap'>
         {nav_items.map(item => {
             return <div key={item.id}><Button text={item.text} onClick={() => handleClick(item)} pin={item.id === id ? true : false} /></div>
         })}

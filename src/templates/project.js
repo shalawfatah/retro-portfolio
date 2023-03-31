@@ -1,5 +1,4 @@
 import React from 'react'
-import { useStaticQuery } from 'gatsby';
 import Button from '../components/layout/Button'
 import Layout from '../components/layout/Layout';
 import { graphql } from 'gatsby'

@@ -8,8 +8,8 @@ const Skills = () => {
         <Title text="Skills" />
         <div className='flex flex-wrap'>
           <div className='relative' >
-            <StaticImage src={"../../../images/skills/paper4.webp"} className="w-96" />
-            <div className='absolute top-20 left-16'>
+            <StaticImage src={"../../../images/skills/paper4.webp"} className="w-96 hidden lg:block xl:block md:block" />
+            <div className='lg:absolute block top-20 left-16 my-6'>
             <h2 className='text-xl underline'>Front-end</h2>
             <ul>
               <li>HTML, Semantic HTML, Accessibility</li>
@@ -23,8 +23,8 @@ const Skills = () => {
             </div>
           </div>
           <div className='relative'>
-            <StaticImage src={"../../../images/skills/paper9.png"} className="w-96" />
-            <div className='absolute top-12 left-24'>
+            <StaticImage src={"../../../images/skills/paper9.png"} className="w-96 hidden lg:block xl:block md:block" />
+            <div className='lg:absolute block top-12 left-24 my-6'>
             <h2 className='text-xl underline'>Back-end</h2>
             <ul>
               <li>NodeJS, ExpressJS, Fastify</li>
@@ -39,8 +39,8 @@ const Skills = () => {
             </div>
           </div>
           <div className='relative'>
-            <StaticImage src={"../../../images/skills/paper1.png"} className="w-96" />
-            <div className='absolute top-20 left-24'>
+            <StaticImage src={"../../../images/skills/paper1.png"} className="w-96 hidden lg:block xl:block md:block" />
+            <div className='lg:absolute block top-20 left-24 my-6'>
             <h2 className='text-xl underline'>General</h2>
             <ul>
               <li>Git</li>
