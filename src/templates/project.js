@@ -17,13 +17,13 @@ const SingleProject = ({data}) => {
     <Layout>
         <div className='flex justify-center items-center flex-col '>
             <h2 className='text-3xl underline'>{project?.title}</h2>
-            <div className='flex gap-x-2 my-4'>
-            <p className='font-bold'>Tech Stack:</p>
-            {project?.techstack?.map((item, index) => <p key={index} className='bg-gray-200 rounded px-4 py-1 text-xs'>{item}</p>)}
+            <div className='flex items-center gap-x-2 my-4'>
+            <p className='font-bold'>Tech Stack: &nbsp;</p>
+            {project?.techstack?.map((item, index) => <p key={index} className='rounded px-4 py-1 text-xs'>&nbsp;{item} {index < project?.techstack.length - 1 && '|'}</p>)}
             </div>
             <div className='my-4 text-center'>
             <p className='text-xl underline my-2'>Description:</p>
-            <p className='text-gray-600'>{project?.content}</p>
+            <p className='text-gray-600'>{project.content}</p>
             </div>
             <h2 className='text-xl underline '>For review</h2>
             <div className='flex flex-row gap-x-4'>
@@ -41,6 +41,7 @@ export const query = graphql`
       picture
       techstack
       title
+      content
       id
       github
       featured
