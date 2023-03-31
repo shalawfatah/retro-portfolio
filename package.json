@@ -5,7 +5,7 @@
   "description": "retro-portfolio",
   "author": "Shalaw Fatah",
   "engines": {
-    "node": "19.0.0"
+    "node": "19.0.1"
   },
   "keywords": [
     "gatsby"
