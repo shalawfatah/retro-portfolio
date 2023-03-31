@@ -18,7 +18,7 @@ const Blog = () => {
   return (
     <Layout classes="bg-[#CED3DA]">
       <div className='pb-20'>
-      {blogs.map(item => {
+      {blogs.length > 0 && blogs.map(item => {
         return <Paper link={item.link} title={item.title} excerpt={`${item.excerpt} ...`} />
       })}
       </div>
