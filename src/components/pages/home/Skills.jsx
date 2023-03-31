@@ -1,17 +1,17 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Title from '../../general/Title'
-
-// COMMENT
+import paper1 from '../../../images/skills/paper4.webp';
+import paper2 from "../../../images/skills/paper9.png";
+import paper3 from "../../../images/skills/paper1.png";
 
 const Skills = () => {
   return (
-    <div className='mx-0 lg:mx-48 md:mx-32 the-girl-next-door text-[#00366f] select-none'>
+    <div className='mx-12 lg:mx-48 md:mx-32  text-[#00366f] select-none'>
         <Title text="Skills" />
-        <div className='flex flex-wrap'>
-          <div className='relative' >
-            <StaticImage src={"../../../images/skills/paper4.webp"} className="max-w-96" />
-            <div className='absolute lg:top-20 md:top-20 top-4 lg:mx-6 left-16 my-6'>
+        <div className='flex flex-wrap justify-around the-girl-next-door'>
+          <div className='bg-cover p-20' style={{ backgroundImage: `url(${paper1})` }} >
+            <div>
             <h2 className='text-xl underline'>Front-end</h2>
             <ul>
               <li>HTML, Semantic HTML, Accessibility</li>
@@ -24,9 +24,8 @@ const Skills = () => {
             </ul>
             </div>
           </div>
-          <div className='relative'>
-            <StaticImage src={"../../../images/skills/paper9.png"} className="max-w-96" />
-            <div className='absolute lg:top-12 md:top-20 top-4 lg:mx-6 left-24 my-6'>
+          <div className='bg-cover py-16 px-24' style={{ backgroundImage: `url(${paper2})` }}>
+            <div className=''>
             <h2 className='text-xl underline'>Back-end</h2>
             <ul>
               <li>NodeJS, ExpressJS, Fastify</li>
@@ -40,9 +39,8 @@ const Skills = () => {
             </ul>
             </div>
           </div>
-          <div className='relative'>
-            <StaticImage src={"../../../images/skills/paper1.png"} className="max-w-96" />
-            <div className='absolute lg:top-20 md:top-20 top-4 left-24 lg:mx-6 my-6'>
+          <div className='bg-cover p-24' style={{ backgroundImage: `url(${paper3})` }}>
+            <div className=''>
             <h2 className='text-xl underline'>General</h2>
             <ul>
               <li>Git</li>
