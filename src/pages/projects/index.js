@@ -13,7 +13,7 @@ const Projects = () => {
   }
   useEffect(() => {
     fetcher()
-  }, [])
+  }, [projects])
 
   return (
     <Layout classes="bg-[#CED3DA]">

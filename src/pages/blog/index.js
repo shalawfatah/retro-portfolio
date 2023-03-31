@@ -13,7 +13,7 @@ const Blog = () => {
   }
   useEffect(() => {
     fetcher()
-  }, [])
+  }, [blogs])
 
   return (
     <Layout classes="bg-[#CED3DA]">
