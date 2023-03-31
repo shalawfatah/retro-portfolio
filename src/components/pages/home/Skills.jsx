@@ -2,6 +2,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Title from '../../general/Title'
 
+// COMMENT
+
 const Skills = () => {
   return (
     <div className='mx-12 lg:mx-48 md:mx-32 the-girl-next-door text-[#00366f] select-none'>
