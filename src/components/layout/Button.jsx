@@ -1,5 +1,4 @@
 import React from 'react'
-import pin from '../../../public/static/pin.svg';
 import Pin from './Pin';
 
 const Button = ({text, onClick, pin}) => {
