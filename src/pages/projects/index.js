@@ -1,24 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useStaticQuery } from 'gatsby';
 import Frame from '../../components/general/Frame'
 import Layout from '../../components/layout/Layout'
-import { supabase } from '../../lib/supabase';
+import { graphql } from 'gatsby'
 
 const Projects = () => {
 
-  const [projects, setProjects] = useState([])
-  const fetcher = async() => {
-    const {data, error} = await supabase.from('projects').select().eq('featured', true)
-    if(error) console.log(error)
-    setProjects(data)
-  }
-  useEffect(() => {
-    fetcher()
-  }, [projects])
+  const data = useStaticQuery(graphql`
+    query projectQuery {
+      allSupabaseProject {
+        nodes {
+          id
+          title
+          techstack
+          picture
+        }
+      }
+    }
+  `);
 
   return (
     <Layout classes="bg-[#CED3DA]">
       <div className='flex gap-x-20 flex-wrap justify-center mx-20 pb-20'>
-      {projects.length > 0 && projects.map((item, index) => {
+      {data.allSupabaseProject.nodes.map((item, index) => {
         return <Frame link={item.id} classes={`${index % 2 === 0 ? 'lg:mt-20' : ''} my-4`} title={item.title} body={item.techstack} picture={item.picture} />
       })}
       </div>

@@ -1,24 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useStaticQuery } from 'gatsby'
 import Layout from '../../components/layout/Layout'
 import Paper from '../../components/pages/blog/Paper'
-import { supabase } from '../../lib/supabase'
+import { graphql } from 'gatsby'
 
 const Blog = () => {
-
-  const [blogs, setBlogs] = useState([])
-  const fetcher = async() => {
-    const {data, error} = await supabase.from('blog').select()
-    if(error) console.log(error)
-    setBlogs(data)
+  const data = useStaticQuery(graphql`
+  query blogQuery {
+    allSupabaseBlog {
+      nodes {
+        link
+        title
+        excerpt
+      }
+    }
   }
-  useEffect(() => {
-    fetcher()
-  }, [blogs])
+`);
 
   return (
     <Layout classes="bg-[#CED3DA]">
       <div className='pb-20'>
-      {blogs.length > 0 && blogs.map(item => {
+      {data.allSupabaseBlog.nodes.map(item => {
         return <Paper link={item.link} title={item.title} excerpt={`${item.excerpt} ...`} />
       })}
       </div>

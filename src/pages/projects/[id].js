@@ -1,26 +1,34 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useStaticQuery } from 'gatsby';
 import Button from '../../components/layout/Button'
 import Layout from '../../components/layout/Layout'
-import { supabase } from '../../lib/supabase'
+import { graphql } from 'gatsby'
 
 const SingleProject = (params) => {
-    const [project, setProject] = useState({})
-    const id = params.params.id
-    const fetcher = async() => {
-        const {data, error} = await supabase.from('projects').select().eq('id', id).single()
-        if(error) console.log(error)
-        setProject(data)
+  const data = useStaticQuery(graphql`
+    query projectQuery {
+      allSupabaseProject {
+        nodes {
+          id
+          title
+          techstack
+          picture
+          content
+          github
+          live
+        }
+      }
     }
-    useEffect(() => {
-        fetcher()
-    }, [])
+  `);
+  const project = data.allSupabaseProject.nodes.find(item => item.id === params.params.id)
     const githubLink = () => {
         window.location.href = `${project.github}`;
     }
     const liveLink = () => {
         window.location.href = `${project.live}`;
     }
-  return (
+
+    return (
     <Layout>
         <div className='flex justify-center items-center flex-col '>
             <h2 className='text-3xl underline'>{project.title}</h2>
