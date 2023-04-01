@@ -18,7 +18,7 @@ const SingleProject = ({data}) => {
 
     return (
     <Layout>
-        <div className='flex justify-center items-center flex-col '>
+        <div className='flex justify-center items-center flex-col'>
             <h2 className='text-3xl underline'>{project?.title}</h2>
             <div className='flex items-center gap-x-2 my-4'>
             <p className='font-bold'>Tech Stack: &nbsp;</p>
@@ -27,7 +27,7 @@ const SingleProject = ({data}) => {
             <div className='my-4'>
             <p className='text-xl underline my-2'>Description:</p>
             </div>
-            <div className='text-gray-600 text-left' dangerouslySetInnerHTML={{__html: project.content}}></div>
+            <div className='text-gray-600 text-left mb-12' style={{lineHeight: '40px'}} dangerouslySetInnerHTML={{__html: project.content}}></div>
             <h2 className='text-xl underline '>For review</h2>
             <div className='flex flex-row gap-x-4'>
             <Button pin={false} text="Code on Github" onClick={githubLink} />
