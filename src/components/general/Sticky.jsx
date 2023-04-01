@@ -1,14 +1,17 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
-const Sticky = ({classes, text}) => {
+const Sticky = ({classes, text, image}) => {
   return (
-    <div className={`${classes} 
+    <motion.div drag className={`${classes} 
                 the-girl-next-door 
                 h-72 w-56 shadow-md shadow-gray-600 
-                flex justify-center items-center 
-                p-10 text-center text-2xl
+                flex justify-center items-center
+                text-center text-2xl
+                py-20 px-4
                 text-[#00366f]
-                `}>{text}</div>
+                `}><p>{text}</p>{image}
+    </motion.div>
   )
 }
 

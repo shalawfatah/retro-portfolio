@@ -1,4 +1,3 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Title from '../../general/Title'
 import paper1 from '../../../images/skills/paper4.webp';

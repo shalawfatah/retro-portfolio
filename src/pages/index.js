@@ -4,6 +4,7 @@ import Layout from "../components/layout/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import SocialMedia from "../components/pages/home/SocialMedia"
 import Skills from "../components/pages/home/Skills"
+import tea from '../images/sticky/000.png';
 
 const IndexPage = () => {
 
@@ -11,9 +12,9 @@ const IndexPage = () => {
     <Layout classes={"bg-[#CED3DA]"}>
       <div className="flex flex-wrap justify-around relative container lg:my-48">
         <div className=" lg:relative md:relative">
-          <Sticky text={"Fourth"} classes={'bg-[#CED3DA] -mt-2  -rotate-[12deg] absolute hidden lg:block'} />
-          <Sticky text={"Second"} classes={'bg-[#B1D0FF] -mt-2  -rotate-[8deg] absolute hidden lg:block'} />
-          <Sticky text={"Third"} classes={'bg-[#93E496] -mt-2  -rotate-[4deg] absolute hidden lg:block'} />
+          <Sticky text={"Well, I love tea"} image={<img className="mx-auto my-auto h-20" src={tea} alt="tea" />} classes={'bg-[#CED3DA] -mt-2  -rotate-[12deg] absolute hidden lg:block'} />
+          <Sticky text={"I have a great vision and greater implementation"} classes={'bg-[#B1D0FF] -mt-2  -rotate-[8deg] absolute hidden lg:block'} />
+          <Sticky text={"I use Javascript and React for almost everything"} classes={'bg-[#93E496] -mt-2  -rotate-[4deg] absolute hidden lg:block'} />
           <Sticky text={"I'm a web developer, focusing on frontend"} classes={'bg-[#FFEA79] lg:block lg:absolute z-96'} />
         </div>
         <div className="">
