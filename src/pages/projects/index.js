@@ -25,7 +25,7 @@ const Projects = () => {
     <Layout classes="bg-[#CED3DA]">
       <div className='flex gap-x-20 flex-wrap justify-center mx-20 pb-20'>
       {data.allSupabaseProject.nodes.map((item, index) => {
-        return <Frame link={item.id} classes={`${index % 2 === 0 ? 'lg:mt-20' : ''} my-4`} title={item.title} body={item.techstack} picture={item.picture} />
+        return <Frame link={item.id} classes={`${index % 2 === 0 ? 'lg:mt-20' : ''} my-4`} title={item.title} body={item.techstack.map(item => <p>{item}</p>)} picture={item.picture} />
       })}
       </div>
     </Layout>

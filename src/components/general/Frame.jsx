@@ -10,7 +10,7 @@ const Frame = ({title, body, picture, classes, link}) => {
         <StaticImage src={"../../images/frame.webp"} className="w-80" />
         <Link to={link} style={{backgroundImage: `url(${picture})`, backgroundSize: 'cover'}} className='absolute w-[234px] h-[234px] left-[42px] top-[175px] p-4 flex flex-col justify-end cursor-pointer'>
             <h2 className='font-bold bg-white rounded px-1 my-1 bg-opacity-70'>{title}</h2>
-            <p className='bg-white rounded px-1 my-1 bg-opacity-70'>{body}</p>
+            <div className='flex flex-wrap gap-x-2 bg-white rounded px-1 my-1 bg-opacity-70 text-xs'>{body}</div>
         </Link>
     </div>
   )
