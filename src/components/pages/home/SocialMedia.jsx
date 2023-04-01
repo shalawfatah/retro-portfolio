@@ -2,6 +2,8 @@ import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import Title from '../../general/Title'
 
+// SOCIAL MEDIA SECTION - HOME PAGE 
+
 const SocialMedia = () => {
   return (
     <div className="mx-12 lg:mx-48 md:mx-32 text-[#00366f] select-none">

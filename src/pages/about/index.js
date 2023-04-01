@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from '../../components/layout/Layout';
 import Note from '../../components/pages/about/Note';
 
+// ABOUT PAGE 
+
 const note = {
   title: 'Dear reader',
   body: `

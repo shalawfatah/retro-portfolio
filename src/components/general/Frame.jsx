@@ -2,6 +2,8 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
+// FRAME COMPONENT THAT WRAPS PROJECT ANIMATED PHOTOS
+
 const Frame = ({title, body, picture, classes, link}) => {
   return (
     <div className={`${classes} relative`}>

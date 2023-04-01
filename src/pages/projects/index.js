@@ -4,6 +4,8 @@ import Frame from '../../components/general/Frame'
 import Layout from '../../components/layout/Layout'
 import { graphql } from 'gatsby'
 
+// PROJECTS PAGE 
+
 const Projects = () => {
 
   const data = useStaticQuery(graphql`

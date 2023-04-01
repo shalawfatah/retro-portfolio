@@ -4,6 +4,8 @@ import Layout from '../../components/layout/Layout'
 import Paper from '../../components/pages/blog/Paper'
 import { graphql } from 'gatsby'
 
+// BLOG PAGE 
+
 const Blog = () => {
   const data = useStaticQuery(graphql`
   query blogQuery {

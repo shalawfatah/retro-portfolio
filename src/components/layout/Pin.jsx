@@ -1,5 +1,7 @@
 import React from 'react'
 
+// THE PIN THAT IS USED ON STICKY NOTES SOCIAL MEDIA SECTION
+
 const Pin = () => {
   return (
     <svg width="46" height="54" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">

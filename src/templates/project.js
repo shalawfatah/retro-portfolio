@@ -3,6 +3,9 @@ import Button from '../components/layout/Button'
 import Layout from '../components/layout/Layout';
 import { graphql } from 'gatsby'
 
+// SINGLE PROJECT PAGE 
+
+
 const SingleProject = ({data}) => {
 
     const project = data.supabaseProject;

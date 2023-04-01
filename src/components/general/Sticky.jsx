@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
+// STICKY NOTES ON HOME PAGE, DRAGGABLE 
+
 const Sticky = ({classes, text, image}) => {
   return (
     <motion.div drag className={`${classes} 

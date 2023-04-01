@@ -7,6 +7,8 @@ import Skills from "../components/pages/home/Skills"
 import tea from '../images/sticky/000.png';
 import Steam from "../components/general/Steam"
 
+// HOME PAGE 
+
 const IndexPage = () => {
 
   return (

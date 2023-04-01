@@ -4,6 +4,8 @@ import paper1 from '../../../images/skills/paper4.webp';
 import paper2 from "../../../images/skills/paper9.png";
 import paper3 from "../../../images/skills/paper1.png";
 
+// SKILLS SECTION - HOME PAGE
+
 const Skills = () => {
   return (
     <div className='mx-12 lg:mx-48 md:mx-32  text-[#00366f] select-none'>

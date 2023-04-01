@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
 
+// LAYOUT WHICH INCLUDES NAVBAR 
+
 const Layout = ({children, classes}) => {
   return (
     <div className={`${classes} changa`}>

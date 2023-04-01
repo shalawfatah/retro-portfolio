@@ -1,6 +1,8 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
+// PAPER ON BLOG SECTION
+
 const Paper = ({title, excerpt, link}) => {
   return (
     <a target="_blank" href={link} className='flex justify-center relative my-6 cursor-pointer'>

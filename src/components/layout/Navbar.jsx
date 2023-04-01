@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 import Button from './Button'
 import { navigate } from "gatsby"
 
+// NAVBAR FOR THE ENTIRE WEBSITE
+
 const nav_items = [
     {id:1, text: "Home", path: '/'},
     {id:2, text: "Projects", path: '/projects'},

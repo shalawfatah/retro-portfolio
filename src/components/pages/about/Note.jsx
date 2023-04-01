@@ -1,6 +1,8 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
+// NOTE ON ABOUT PAGE
+
 const Note = ({title, body}) => {
   return (
     <div className='flex justify-center relative my-6 min-h-screen the-girl-next-door'>

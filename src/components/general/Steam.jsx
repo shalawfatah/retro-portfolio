@@ -1,5 +1,6 @@
 import React from 'react';
 
+// STEAM COMPONENT THAT LOOKS LIKE A VAPOR OVER THE TEA CUP ON HOME PAGE
 const Steam = () => {
   return (
     <div className="vapour">
