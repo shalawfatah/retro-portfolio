@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Sticky = ({classes, text, image}) => {
   return (
     <motion.div drag className={`${classes} 
-                the-girl-next-door 
+                the-girl-next-door cursor-grabbing
                 h-72 w-56 shadow-md shadow-gray-600 
                 flex justify-center items-center
                 text-center text-2xl

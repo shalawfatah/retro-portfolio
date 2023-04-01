@@ -1,0 +1,41 @@
+.vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.vapour span {
+    position: relative;
+    display: block;
+    bottom: -150px;
+    margin: 0 2px 50px;
+    min-width: 8px;
+    height: 120px;
+    background: #83716c;
+    border-radius: 50%;
+    animation: animate 6s linear infinite;
+    opacity: 0;
+    filter: blur(10px);
+    animation-delay: calc(var(--v) * -0.5s);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-150px) scaleX(5);
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-300px) scaleX(10);
+    }
+}

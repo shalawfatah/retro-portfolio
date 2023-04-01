@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import SocialMedia from "../components/pages/home/SocialMedia"
 import Skills from "../components/pages/home/Skills"
 import tea from '../images/sticky/000.png';
+import Steam from "../components/general/Steam"
 
 const IndexPage = () => {
 
@@ -18,6 +19,7 @@ const IndexPage = () => {
           <Sticky text={"I'm a web developer, focusing on frontend"} classes={'bg-[#FFEA79] lg:block lg:absolute z-96'} />
         </div>
         <div className="">
+          <Steam />
         <StaticImage src="../images/tea-leaf.png" alt="Tea" className="lg:w-[550px] w-[350px]" />
         </div>
       </div>

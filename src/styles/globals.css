@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+@import './steam.css';
 
 .the-girl-next-door {
     font-family: 'The Girl Next Door', cursive;
