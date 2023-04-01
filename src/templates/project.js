@@ -53,3 +53,5 @@ export const query = graphql`
 `
 
 export default SingleProject
+
+export const Head = () => <title>Single Project Page</title>
