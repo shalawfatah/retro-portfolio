@@ -20,7 +20,7 @@ module.exports = {
       types: [
         {
           type: "Blog",
-          query: (client) => client.from("blog").select('*'), //sync or async
+          query: (client) => client.from("blog").select('*').order('date', { ascending: false }), //sync or async
         },
         {
           type: "Project",

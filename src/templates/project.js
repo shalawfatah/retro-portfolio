@@ -24,10 +24,10 @@ const SingleProject = ({data}) => {
             <p className='font-bold'>Tech Stack: &nbsp;</p>
             {project?.techstack?.map((item, index) => <p key={index} className='rounded px-4 py-1 text-xs'>&nbsp;{item} {index < project?.techstack.length - 1 && '|'}</p>)}
             </div>
-            <div className='my-4 text-center'>
+            <div className='my-4'>
             <p className='text-xl underline my-2'>Description:</p>
-            <p className='text-gray-600'>{project.content}</p>
             </div>
+            <div className='text-gray-600 text-left' dangerouslySetInnerHTML={{__html: project.content}}></div>
             <h2 className='text-xl underline '>For review</h2>
             <div className='flex flex-row gap-x-4'>
             <Button pin={false} text="Code on Github" onClick={githubLink} />
