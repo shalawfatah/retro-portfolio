@@ -24,7 +24,7 @@ module.exports = {
         },
         {
           type: "Project",
-          query: (client) => client.from("projects").select('*'),
+          query: (client) => client.from("projects").select('*').order('created_at', { ascending: false }),
         },
       ],
     },
