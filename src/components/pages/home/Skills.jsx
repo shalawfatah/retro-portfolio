@@ -11,9 +11,9 @@ const Skills = () => {
     <div className='mx-12 lg:mx-48 md:mx-32  text-[#00366f] select-none'>
         <Title text="Skills" />
         <div className='flex flex-wrap justify-around the-girl-next-door'>
-          <div className='bg-cover p-20' style={{ backgroundImage: `url(${paper1})` }} >
+          <div className='bg-cover p-12' style={{ backgroundImage: `url(${paper1})` }} >
             <div>
-            <h2 className='text-xl underline mt-4'>Front-end</h2>
+            <h2 className='text-xl underline mt-16'>Front-end</h2>
             <ul>
               <li>HTML, Semantic HTML, Accessibility</li>
               <li>CSS, Bootstrap, Tailwind, Sass</li>
@@ -25,7 +25,7 @@ const Skills = () => {
             </ul>
             </div>
           </div>
-          <div className='bg-cover py-16 px-24' style={{ backgroundImage: `url(${paper2})` }}>
+          <div className='bg-cover py-16 lg:px-24 px-12' style={{ backgroundImage: `url(${paper2})` }}>
             <div className=''>
             <h2 className='text-xl underline'>Back-end</h2>
             <ul>
