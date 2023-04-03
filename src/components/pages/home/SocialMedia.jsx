@@ -21,7 +21,7 @@ const SocialMedia = () => {
         </div>
         <div className="bg-[#ebc1c9] -mt-2 rotate-[2deg] max-w-[250px] h-[250px] p-2 shadow-md shadow-gray-600 relative">
         <StaticImage src={"../../../images/pin.png"} className="w-16 h-auto absolute z-[2000] right-4" />
-            <p className='font-bold p-2 underline text-xl'>Address</p>
+            <p className='font-bold p-2 underline text-xl'>Blog</p>
             <div className='flex justify-center'>
             <StaticImage src={"../../../images/neo-portfolio/blog.png"}
                 alt="image" className='m-2'/>
@@ -30,7 +30,7 @@ const SocialMedia = () => {
         </div>
         <div className="bg-[#93E496] -mt-2 -rotate-[2deg] max-w-[250px] h-[250px] p-2 shadow-md shadow-gray-600 relative my-4">
         <StaticImage src={"../../../images/pin.png"} className="w-16 h-auto absolute z-[2000] right-4" />
-            <p className='font-bold p-2 underline text-xl'>Address</p>
+            <p className='font-bold p-2 underline text-xl'>Design</p>
             <div className='flex justify-center'>
             <StaticImage src={"../../../images/neo-portfolio/dribbble.png"}
                 alt="image" className='m-2'/>
@@ -39,7 +39,7 @@ const SocialMedia = () => {
         </div>
         <div className="bg-[#B1D0FF] -mt-2 rotate-[2deg] max-w-[250px] h-[250px] p-2 shadow-md shadow-gray-600 relative my-4">
         <StaticImage src={"../../../images/pin.png"} className="w-16 h-auto absolute z-[2000] right-4" />
-            <p className='font-bold p-2 underline text-xl'>Address</p>
+            <p className='font-bold p-2 underline text-xl'>Email</p>
             <div className='flex justify-center'>
             <StaticImage src={"../../../images/neo-portfolio/email.png"}
                 alt="image" className='m-2'/>
@@ -48,7 +48,7 @@ const SocialMedia = () => {
         </div>
         <div className="bg-[#CED3DA] -mt-2  max-w-[250px] h-[250px] p-2 shadow-md shadow-gray-600 relative my-4">
         <StaticImage src={"../../../images/pin.png"} className="w-16 h-auto absolute z-[2000] right-4" />
-            <p className='font-bold p-2 underline text-xl'>Address</p>
+            <p className='font-bold p-2 underline text-xl'>Github</p>
             <div className='flex justify-center'>
             <StaticImage src={"../../../images/neo-portfolio/github.png"}
                 alt="image" className='m-2'/>
@@ -57,7 +57,7 @@ const SocialMedia = () => {
         </div>
         <div className="bg-[#FFC700] -mt-2 -rotate-[2deg] max-w-[250px] h-[250px] p-2 shadow-md shadow-gray-600 relative my-4">
         <StaticImage src={"../../../images/pin.png"} className="w-16 h-auto absolute z-[2000] right-4" />
-            <p className='font-bold p-2 underline text-xl'>Address</p>
+            <p className='font-bold p-2 underline text-xl'>Phone</p>
             <div className='flex justify-center'>
             <StaticImage src={"../../../images/neo-portfolio/phone.png"}
                 alt="image" className='m-2'/>
