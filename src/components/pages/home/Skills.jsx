@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from '../../general/Title'
-import paper1 from '../../../images/skills/paper4.webp';
-import paper2 from "../../../images/skills/paper9.png";
+import paper1 from '../../../images/sticky/004.png';
+import paper2 from "../../../images/sticky/001new.webp";
 import paper3 from "../../../images/skills/paper1.png";
 
 // SKILLS SECTION - HOME PAGE
@@ -13,7 +13,7 @@ const Skills = () => {
         <div className='flex flex-wrap justify-around the-girl-next-door'>
           <div className='bg-cover p-20' style={{ backgroundImage: `url(${paper1})` }} >
             <div>
-            <h2 className='text-xl underline'>Front-end</h2>
+            <h2 className='text-xl underline mt-4'>Front-end</h2>
             <ul>
               <li>HTML, Semantic HTML, Accessibility</li>
               <li>CSS, Bootstrap, Tailwind, Sass</li>

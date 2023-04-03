@@ -21,14 +21,14 @@ const IndexPage = () => {
           <Sticky text={"I use Javascript and React for almost everything"} classes={'bg-[#93E496] -mt-2  -rotate-[4deg] absolute z-64'} />
           <Sticky text={"I'm a web developer, focusing on frontend"} classes={'bg-[#FFEA79] lg:absolute z-96'} />
         </div>
-        <motion.div 
+        <div 
             drag 
             dragConstraints={{left:0, right:0, top:0, bottom:0}}
             className="lg:-mt-40 cursor-grabbing"
             >
         <Steam />
         <StaticImage src="../images/tea-leaf.png" alt="Tea" className="lg:w-[550px] w-[350px] pointer-events-none" />
-        </motion.div>
+        </div>
       </div>
       <div className="my-12">
         <Skills />
