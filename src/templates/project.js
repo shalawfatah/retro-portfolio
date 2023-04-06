@@ -10,10 +10,10 @@ const SingleProject = ({data}) => {
 
     const project = data.supabaseProject;
     const githubLink = () => {
-        window.location.href = `${project?.github}`;
+      window.open(`${project?.github}`, '_blank');
     }
     const liveLink = () => {
-        window.location.href = `${project?.live}`;
+      window.open(`${project?.live}`, '_blank');
     }
 
     return (
