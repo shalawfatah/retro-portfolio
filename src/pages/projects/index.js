@@ -10,7 +10,7 @@ const Projects = () => {
 
   const data = useStaticQuery(graphql`
     query projectQuery {
-      allSupabaseProject {
+      allSupabaseProject(sort: {title: DESC}) {
         nodes {
           id
           title
