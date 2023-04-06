@@ -5,3 +5,4 @@
 - I'm not a desiger, but I think the project is built in a way that is pleasing to the eyes in terms of color contrast, white space and overall vibe. 
 - Web Vitals scores are high, with performance reaching 98%, Accessibility 97%, Best Practices %100, and SEO 100%.
 - I've also updated some projects and removed some old ones here as they were less appealing by today's standards.
+- This project is meant to show the consideration to UI/UX and responsive layout.
