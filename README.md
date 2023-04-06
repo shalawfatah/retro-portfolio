@@ -6,3 +6,4 @@
 - Web Vitals scores are high, with performance reaching 98%, Accessibility 97%, Best Practices %100, and SEO 100%.
 - I've also updated some projects and removed some old ones here as they were less appealing by today's standards.
 - This project is meant to show the consideration to UI/UX and responsive layout.
+- Here, you can find some featured projects, blogs, and other information that I've written throughout years. 
