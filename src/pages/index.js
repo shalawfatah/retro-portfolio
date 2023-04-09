@@ -6,7 +6,6 @@ import SocialMedia from "../components/pages/home/SocialMedia"
 import Skills from "../components/pages/home/Skills"
 import tea from '../images/sticky/000.png';
 import Steam from "../components/general/Steam"
-import { motion } from "framer-motion";
 
 // HOME PAGE 
 
@@ -17,8 +16,8 @@ const IndexPage = () => {
       <div className="flex flex-wrap justify-around relative container lg:my-48">
         <div className="relative">
           <Sticky text={"Well, I love tea"} image={<img className="mx-auto my-auto h-20 pointer-events-none" src={tea} alt="tea" />} classes={'bg-[#CED3DA] -mt-2  -rotate-[12deg] absolute z-48'} />
-          <Sticky text={"Time tracking? We don't do that here ✋"} classes={'bg-[#B1D0FF] -mt-2  -rotate-[8deg] absolute  z-60'} />
-          <Sticky text={"I'll push you to adopt Javascript as your main tech stack & we'll both regret it 🥲"} classes={'bg-[#93E496] -mt-2  -rotate-[4deg] absolute z-64'} />
+          <Sticky text={"Give me your errors, your glitches, your huddled bugs 🐞"} classes={'bg-[#B1D0FF] -mt-2  -rotate-[8deg] absolute  z-60'} />
+          <Sticky text={"It is during the darkest moments that we must rise to code. 🥲"} classes={'bg-[#93E496] -mt-2  -rotate-[4deg] absolute z-64'} />
           <Sticky text={"I'm a web developer, focusing on frontend"} classes={'bg-[#FFEA79] lg:absolute z-96'} />
         </div>
         <div
