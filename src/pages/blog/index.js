@@ -9,7 +9,7 @@ import { graphql } from 'gatsby'
 const Blog = () => {
   const data = useStaticQuery(graphql`
   query blogQuery {
-    allSupabaseBlog {
+    allSupabaseBlog(sort: {date: DESC}) {
       nodes {
         link
         title
